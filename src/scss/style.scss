@@ -1,0 +1,133 @@
+@import 'fonts';
+$screen-width: 1180px;
+$link-fonts: Nunito;
+
+
+// Стандартные настройки для моего css
+* {
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	transition: all 0.3s ease; //плавные действия
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	font-family: $link-fonts;
+	font-weight: 400;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+button,
+input {
+	outline: none;
+}
+
+// Далее пишем ручками
+.header {
+	padding: 30px 0;
+	background: linear-gradient(to right, #82009f 0%, #5d34af 50%, #00ceab 100%);
+
+	&__inner {
+		max-width: $screen-width;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		margin: 0;
+		font-size: 20px;
+		color: white;
+	}
+
+	&__search {
+		max-width: 700px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		&-input {
+			min-width: 300px;
+			font-size: 15px;
+			font-family: $link-fonts;
+			font-weight: 300;
+			padding: 5px 35px 5px 5px;
+			border-radius: 5px;
+			background: linear-gradient(to right, #b091b6 0%, #ac8ced 50%, #bcfff4 100%);
+		}
+
+		&-btn {
+			background: url(/img/search.svg);
+			background-size: cover;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			right: 5px;
+		}
+	}
+
+	&__cart-block {
+		margin: 0;
+		position: relative;
+	}
+
+	&__cart-btn {
+		background-image: url(/img/cart.png);
+		background-color: transparent;
+		background-size: cover;
+		width: 30px;
+		height: 30px;
+	}
+
+	&__cart {
+		position: absolute;
+		background-color: white;
+		width: 100px;
+		height: 15px;
+		top: 35px;
+		right: 0px;
+		border-radius: 5px;
+	}
+
+}
+
+.main {
+	max-width: $screen-width - 30px;
+}
+
+.invisible {
+	display: none;
+}
+
+main {
+	max-width: $screen-width - 30px;
+}
+
+@media(max-width: 768px) {}
+
+
+@media (max-width: 768px) {}

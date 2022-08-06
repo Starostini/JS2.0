@@ -1,0 +1,139 @@
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-Bold.woff2") format("woff2"), url("../fonts/Nunito-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-Regular.woff2") format("woff2"), url("../fonts/Nunito-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-Light.woff2") format("woff2"), url("../fonts/Nunito-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-SemiBold.woff2") format("woff2"), url("../fonts/Nunito-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+* {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: Nunito;
+  font-weight: 400;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+button,
+input {
+  outline: none;
+}
+
+.header {
+  padding: 30px 0;
+  background: linear-gradient(to right, #82009f 0%, #5d34af 50%, #00ceab 100%);
+}
+.header__inner {
+  max-width: 1180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+.header__search {
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.header__search-input {
+  min-width: 300px;
+  font-size: 15px;
+  font-family: Nunito;
+  font-weight: 300;
+  padding: 5px 35px 5px 5px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #b091b6 0%, #ac8ced 50%, #bcfff4 100%);
+}
+.header__search-btn {
+  background: url(/img/search.svg);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 5px;
+}
+.header__cart-block {
+  margin: 0;
+  position: relative;
+}
+.header__cart-btn {
+  background-image: url(/img/cart.png);
+  background-color: transparent;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+.header__cart {
+  position: absolute;
+  background-color: white;
+  width: 100px;
+  height: 15px;
+  top: 35px;
+  right: 0px;
+  border-radius: 5px;
+}
+
+.main {
+  max-width: 1150px;
+}
+
+.invisible {
+  display: none;
+}
+
+main {
+  max-width: 1150px;
+}

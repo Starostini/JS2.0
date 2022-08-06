@@ -1,0 +1,46 @@
+{
+   "product": [
+      {
+         "id": 0,
+         "name": "Tomato",
+         "image": "//placehold.it/200x150",
+         "cartImage": "//placehold.it/100x80",
+         "price": 300
+      },
+      {
+         "id": 1,
+         "name": "Potato",
+         "image": "//placehold.it/200x150",
+         "cartImage": "//placehold.it/100x80",
+         "price": 60
+      },
+      {
+         "id": 2,
+         "name": "Cucumber",
+         "image": "//placehold.it/200x150",
+         "cartImage": "//placehold.it/100x80",
+         "price": 980
+      },
+      {
+         "id": 3,
+         "name": "Cherry",
+         "image": "//placehold.it/200x150",
+         "cartImage": "//placehold.it/100x80",
+         "price": 360
+      },
+      {
+         "id": 4,
+         "name": "Cabbage",
+         "image": "//placehold.it/200x150",
+         "cartImage": "//placehold.it/100x80",
+         "price": 34
+      },
+      {
+         "id": 5,
+         "name": "Watermelon",
+         "image": "//placehold.it/200x150",
+         "cartImage": "//placehold.it/100x80",
+         "price": 80
+      }
+   ]
+}

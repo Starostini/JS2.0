@@ -29,44 +29,44 @@ const database = {
 		{
 			"id": 0,
 			"name": "Tomato",
-			"image": `&#8260 &#8260 placekitten.com &#8260 g &#8260 200 &#8260 300`,
-			"cartImage": "\/\/placekitten.com\/g\/200\/300",
+			"image": "http://placekitten.com/g/300/300",
+			"cartImage": "http://placekitten.com/g/50/50",
 			"price": 300
 		},
 
 		{
 			"id": 1,
 			"name": "Potato",
-			"image": "http:////placekitten.com/g/200/300",
-			"cartImage": "http://placekitten.com/g/200/300",
+			"image": "http://placekitten.com/g/300/300",
+			"cartImage": "http://placekitten.com/g/50/50",
 			"price": 60
 		},
 		{
 			"id": 2,
 			"name": "Cucumber",
-			"image": `http://placekitten.com/g/200/300`,
-			"cartImage": "http://placekitten.com/g/200/300",
+			"image": "http://placekitten.com/g/300/300",
+			"cartImage": "http://placekitten.com/g/50/50",
 			"price": 980
 		},
 		{
 			"id": 3,
 			"name": "Cherry",
-			"image": "//placehold.it/200x150",
-			"cartImage": "//placehold.it/100x80",
+			"image": "http://placekitten.com/g/300/300",
+			"cartImage": "http://placekitten.com/g/50/50",
 			"price": 360
 		},
 		{
 			"id": 4,
 			"name": "Cabbage",
-			"image": "//placehold.it/200x150",
-			"cartImage": "//placehold.it/100x80",
+			"image": "http://placekitten.com/g/300/300",
+			"cartImage": "http://placekitten.com/g/50/50",
 			"price": 34
 		},
 		{
 			"id": 5,
 			"name": "Watermelon",
-			"image": "//placehold.it/200x150",
-			"cartImage": "//placehold.it/100x80",
+			"image": "http://placekitten.com/g/300/300",
+			"cartImage": "http://placekitten.com/g/50/50",
 			"price": 80
 		}
 	]
@@ -101,9 +101,9 @@ function takeInfo(element) {
 		price: element.price,
 		quantity: 0,
 		createTemplate: function () {
-			return `<div class="product-item" data-id="${this.id}>
-					<img src="${this.image}" alt="some image">
-					<div class="desc"
+			return `<div class="products-item" data-id="${this.id}">
+					<img src="${this.image}" alt="${this.name}">
+					<div class="desc">
 						<h3>${this.name}</h3>
 						<p>${this.price} &#8381;</p>
 						<button class="buy-btn" 
@@ -144,10 +144,10 @@ function renderProduct() {
 function renderCart() {
 	let addedProduct = '';
 	for (let item of userCart) {
-		addedProduct += `<div class="cart-item" data-id="${item.id}>
+		addedProduct += `<div class="cart-item" data-id="${item.id}">
 	<div class="product-bio">
 		<img src="${item.img}" alt="some image">
-		<div class="product-desc"
+		<div class="product-desc">
 			<p class="product-title">${item.name}</p>
 			<p class="product-quantity">${item.quantity}</p>
 			<p class="product-single-price">${item.price} &#8381;</p>

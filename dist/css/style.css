@@ -49,6 +49,7 @@ li {
 
 img {
   vertical-align: top;
+  margin: 0;
 }
 
 h1,
@@ -119,8 +120,8 @@ input {
 .header__cart {
   position: absolute;
   background-color: white;
-  width: 100px;
-  height: 15px;
+  min-width: 100px;
+  min-height: 15px;
   top: 35px;
   right: 0px;
   border-radius: 5px;
@@ -128,6 +129,51 @@ input {
 
 .main {
   max-width: 1150px;
+}
+
+.products {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 15px;
+}
+
+.desc {
+  text-align: center;
+}
+.desc h3 {
+  font-size: 15px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+.desc p {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px;
+}
+.desc .buy-btn {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  background: linear-gradient(140deg, rgb(243, 251, 207) 0%, rgb(52, 116, 96) 22%, rgb(7, 142, 72) 71%, rgb(43, 152, 0) 100%);
+}
+
+.product-bio {
+  display: flex;
+  width: 150px;
+}
+
+.product-bio {
+  margin: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .invisible {
